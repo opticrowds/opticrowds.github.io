@@ -36,6 +36,7 @@ body{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    text-decoration: none;
 }
 
 #brand{
@@ -93,7 +94,7 @@ h2 {
   padding-bottom: 20px;
 }
 
-.topnav a {
+.topnav .nav_link {
   float: left;
   display: flex;
   text-align: center;
@@ -109,8 +110,8 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .topnav {}
-  .topnav a {display: none;}
-  .topnav a.icon {
+  .topnav .nav_link {display: none;}
+  .topnav .icon {
     float: right;
     display: block;
   }
@@ -126,10 +127,8 @@ h2 {
     right: 0;
     top: 0;
   }
-  .topnav.responsive #nav_links{
 
-  }
-  .topnav.responsive a {
+  .topnav.responsive .nav_link {
     float: none;
     display: block;
     text-align: left;
