@@ -64,6 +64,8 @@ footer{
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    transition: 1s;
+    line-height: 50px;
 }
 
 .placeholder{
@@ -175,7 +177,9 @@ h2 {
     top: 0;
     right: 0;
     padding-top: 33px;
+    padding-bottom: 33px;
     padding-right: 5%;
+    padding-left: 5%;
     float: right;
     display: block;
   }
