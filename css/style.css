@@ -48,6 +48,7 @@ footer{
     flex-wrap: nowrap;
     align-items: center;
     text-decoration: none;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -123,6 +124,7 @@ h2 {
     text-decoration: none;
     font-size: 16px;
     text-align: center;
+    width: -moz-fit-content;
     width: fit-content;
     transition: 1s;
 }
