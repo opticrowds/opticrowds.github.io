@@ -75,7 +75,7 @@ h2 {
     display: flex;
     align-items: center;
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     background: #123455; /* fallback */
     background-image: linear-gradient(0.30turn, #001110, #123455);
