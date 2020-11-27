@@ -262,6 +262,11 @@ h3{
   footer{
     flex-direction: column-reverse;
   }
+
+  footer p{
+    text-align: center;
+  }
+
   .social{
     padding-bottom: 20px;
   }
