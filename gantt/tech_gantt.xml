@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Implementació pilot - ICO" company="Opticrowd" webLink="https://opticrowd.ml" view-date="2021-01-04" view-index="0" gantt-divider-location="398" resource-divider-location="438" version="2.99.2913" locale="es_ES">
+<?xml version="1.0" encoding="UTF-8"?><project name="Implementació pilot - ICO" company="Opticrowd" webLink="https://opticrowd.ml" view-date="2021-02-15" view-index="0" gantt-divider-location="398" resource-divider-location="438" version="2.99.2913" locale="es_ES">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
+    <view zooming-state="default:5" id="gantt-chart">
         <field id="tpd3" name="Nombre" width="379" order="0"/>
         <option id="color.recent">
             <![CDATA[#86caf6 #fa9954 #0080e9 #5ecf9a #b5a7d4 #ffffff #a16d76 #000000]]>
