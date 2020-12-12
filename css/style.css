@@ -24,8 +24,7 @@ body{
 }
 
 main{
-    padding: 0px 4%;
-    padding-top: 110px;
+    padding-top: 80px;
 }
 
 footer{
@@ -37,6 +36,10 @@ footer{
     align-items: center;
 }
 
+
+.big_title{
+  text-align: center;
+}
 
 .social a{
   text-decoration: none;
@@ -53,6 +56,12 @@ p{
 .grey{
     color: #666666;
 }
+
+.back_grey{
+    background-color: #c7c7c7;
+}
+
+
 
 #brand_container{
     display: inline-flex;
@@ -76,7 +85,7 @@ p{
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
     transition: 1s;
     line-height: 50px;
     padding-bottom: 10px;
@@ -84,6 +93,65 @@ h2 {
 
 h3{
     font-size: 20px;
+}
+
+
+.num_container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.num_content{
+  width: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.num_content h3{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.num_content p{
+  text-align: center;
+}
+
+.big_num{
+    border: 3px solid #123455;
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.face{
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.big_num p{
+  width: 100%;
+  font-size: 50px;
+  color: #123455;
+  font-family: 'Poppins', sans-serif;
 }
 
 .placeholder{
@@ -102,13 +170,30 @@ h3{
 
 }
 
+.mission{
+  font-size: 50px;
+  padding-top: 95px;
+  padding-bottom: 30px;
+  margin: 0 50px;
+}
+
+.mission::before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 230px;
+    position: relative;
+    top:-100px;
+    left:-25px;
+    color: #123455;
+    height: 30px;
+}
 
 .placeholder_title{
     height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 15px 15px 0px 0px;
 
     background: #123455; /* fallback */
     background-image: linear-gradient(0.30turn, #001110, #123455);
@@ -118,19 +203,76 @@ h3{
 
 }
 
-.content{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 15px;
+.placeholder_bottom{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    background: #123455; /* fallback */
+    background-image: linear-gradient(0.30turn, #001110, #123455);
+    box-shadow:0 6px 200px 0 rgba(0, 0, 0, 0.19);
+    background-position: right;
+    background-repeat: no-repeat;
 }
+
+
+
+
+
+.placeholder_description{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 25px 50px;
+    background: #c7c7c7;
+}
+
+.placeholder_team{
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 25px 50px;
+}
+
+
+.team_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.team_title img{
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.team_title h2{
+    text-align: center;
+    width: 100%;
+    color: grey;
+}
+
+
+
+
+.right {
+    border-left: 3px solid grey;
+    margin-left: 20px;
+    padding-left: 17px;
+}
+
+.placeholder_description p{
+  font-size: 20px;
+}
+
 
 .main_content{
     border: 0px solid grey;
     border-top: none;
-    padding: 45px 50px 45px 50px;
-    padding-top: 45px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius:  0px 0px 15px 15px;
+    margin: 45px 50px 45px 50px;
+
 }
 
 .section_group{
@@ -156,10 +298,11 @@ h3{
 .placeholder_text{
     margin-left: 50px;
     margin-right: 50px;
-    align-items: left;
+    align-items: center;
     display: flex;
     flex-direction: column;
     color: white;
+    width: 100%;
 }
 
 .left{
@@ -219,7 +362,25 @@ h3{
 }
 
 
-@media screen and (max-width: 800px) {
+#marc{
+  background-image: url("../img/marc.png");
+}
+#fer{
+  background-image: url("../img/fer.png");
+}
+#aleix{
+  background-image: url("../img/aleix.png");
+}
+#lena{
+  background-image: url("../img/lena.png");
+}
+#raul{
+  background-image: url("../img/raul.png");
+}
+
+
+
+@media screen and (max-width: 850px) {
   .topnav .nav_link {display: none;}
   .topnav .icon {
     position: fixed;
@@ -235,6 +396,12 @@ h3{
   .topnav.responsive {
     flex-direction: column;
   }
+
+  .num_container{
+    flex-direction: column;
+    margin-left: calc(50% - 85px);
+  }
+
   .topnav.responsive .nav_link {
     float: none;
     display: block;
