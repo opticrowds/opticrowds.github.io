@@ -133,7 +133,11 @@ h3{
     text-align: center;
 }
 
-
+.face_container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .face{
     height: 150px;
@@ -145,6 +149,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    flex-wrap: wrap;
 }
 
 .big_num p{
@@ -197,7 +202,7 @@ h3{
 
     background: #123455; /* fallback */
     background-image: linear-gradient(0.30turn, #001110, #123455);
-    box-shadow:0 6px 200px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow:0 6px 200px 0 rgba(0, 0, 0, 0.19);*/
     background-position: right;
     background-repeat: no-repeat;
 
@@ -211,13 +216,10 @@ h3{
 
     background: #123455; /* fallback */
     background-image: linear-gradient(0.30turn, #001110, #123455);
-    box-shadow:0 6px 200px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow:0 6px 200px 0 rgba(0, 0, 0, 0.19);*/
     background-position: right;
     background-repeat: no-repeat;
 }
-
-
-
 
 
 .placeholder_description{
@@ -393,6 +395,7 @@ h3{
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     flex-direction: column;
   }
