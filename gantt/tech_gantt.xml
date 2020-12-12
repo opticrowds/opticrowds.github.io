@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Implementació pilot - ICO" company="Opticrowd" webLink="https://opticrowd.ml" view-date="2021-02-15" view-index="0" gantt-divider-location="398" resource-divider-location="438" version="2.99.2913" locale="es_ES">
+<?xml version="1.0" encoding="UTF-8"?><project name="Implementació pilot - ICO" company="Opticrowd" webLink="https://opticrowd.ml" view-date="2021-04-12" view-index="0" gantt-divider-location="632" resource-divider-location="438" version="2.8.11" locale="en_GB">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Nombre" width="379" order="0"/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="488" order="0"/>
+        <field id="tpd8" name="Coordinator" width="125" order="1"/>
         <option id="color.recent">
-            <![CDATA[#86caf6 #fa9954 #0080e9 #5ecf9a #b5a7d4 #ffffff #a16d76 #000000]]>
+            <![CDATA[#ff0033 #000000 #b5a7d4 #e1e1e1 #86caf6 #fa9954 #0080e9 #5ecf9a #ffffff #a16d76]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nombre" width="279" order="0"/>
-        <field id="1" name="Función" width="155" order="1"/>
+        <field id="0" name="Name" width="279" order="0"/>
+        <field id="1" name="Default role" width="155" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -39,7 +40,10 @@
             <task id="2" name="Negociar fusió amb FluxAI" color="#b5a7d4" meeting="false" start="2021-02-15" duration="2" complete="0" thirdDate="2020-10-08" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="5" name="Unió plans tecnològics i de negocis" color="#b5a7d4" meeting="false" start="2021-02-17" duration="3" complete="0" thirdDate="2020-10-08" thirdDate-constraint="0" expand="true"/>
+            <task id="5" name="Unió plans tecnològics i de negocis" color="#b5a7d4" meeting="false" start="2021-02-17" duration="3" complete="0" thirdDate="2020-10-08" thirdDate-constraint="0" expand="true">
+                <depend id="478" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="478" name="Informes unificats OptiCrowd &amp; FluxAI" color="#ff0033" meeting="true" start="2021-02-22" duration="0" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true"/>
             <task id="6" name="Avaluació habilitats nou equip" color="#b5a7d4" meeting="false" start="2021-02-17" duration="3" complete="0" thirdDate="2020-10-08" thirdDate-constraint="0" expand="true"/>
             <task id="7" name="Team building" color="#b5a7d4" meeting="false" start="2021-02-15" duration="5" complete="0" thirdDate="2020-10-08" thirdDate-constraint="0" expand="true"/>
         </task>
@@ -53,16 +57,24 @@
                 <depend id="76" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="13" name="Decidir camins de desenvolupament" color="#b5a7d4" meeting="false" start="2021-02-24" duration="3" complete="0" thirdDate="2021-02-22" thirdDate-constraint="0" expand="true"/>
-            <task id="76" name="Definció de mètriques d'interés" color="#b5a7d4" meeting="false" start="2021-02-24" duration="3" complete="0" thirdDate="2021-02-22" thirdDate-constraint="0" expand="true"/>
+            <task id="76" name="Definció de mètriques d'interés" color="#b5a7d4" meeting="false" start="2021-02-24" duration="3" complete="0" thirdDate="2021-02-22" thirdDate-constraint="0" expand="true">
+                <depend id="405" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="405" name="Pla del disseny de l'arquitectura i el flux de dades del sistema" color="#ff0033" meeting="true" start="2021-03-01" duration="0" complete="0" thirdDate="2021-01-25" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="55" name="MES - Mapejat de l’edifici i desplegament de sensors" color="#5ecf9a" meeting="false" start="2021-03-01" duration="5" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true">
-            <task id="56" name="Mappejar edifici ICO" color="#5ecf9a" meeting="false" start="2021-03-01" duration="3" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true"/>
+            <task id="56" name="Mappejar edifici ICO" color="#5ecf9a" meeting="false" start="2021-03-01" duration="3" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true">
+                <depend id="408" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="408" name="Mapes 2D per plantes d'ICO" color="#ff0033" meeting="true" start="2021-03-04" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
             <task id="61" name="Estratègia desplegament beacons BLE" color="#5ecf9a" meeting="false" start="2021-03-03" duration="2" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
                 <depend id="63" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="63" name="Deplegament de beacons provisional" color="#5ecf9a" meeting="false" start="2021-03-05" duration="1" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
                 <depend id="88" type="2" difference="0" hardness="Strong"/>
+                <depend id="418" type="3" difference="0" hardness="Strong"/>
             </task>
+            <task id="418" name="Xarxa de sensors provisionals instal·lats" color="#ff0033" meeting="true" start="2021-03-08" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="68" name="MSD - Muntatge de servidor i database" color="#5ecf9a" meeting="false" start="2021-03-01" duration="10" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
             <depend id="139" type="2" difference="30" hardness="Strong"/>
@@ -75,10 +87,15 @@
             <task id="74" name="Definició Data Warehouse" color="#5ecf9a" meeting="false" start="2021-03-04" duration="1" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
                 <depend id="84" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="84" name="Estructurar procés ETL" color="#5ecf9a" meeting="false" start="2021-03-05" duration="1" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
+            <task id="84" name="Estructurar procés ETL" color="#5ecf9a" meeting="false" start="2021-03-05" duration="1" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
+                <depend id="426" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="426" name="Conjunt de sentències SQL i ETL" color="#ff0033" meeting="true" start="2021-03-08" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
             <task id="86" name="Programar API del server" color="#5ecf9a" meeting="false" start="2021-03-08" duration="5" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
                 <depend id="93" type="2" difference="0" hardness="Strong"/>
+                <depend id="429" type="3" difference="0" hardness="Strong"/>
             </task>
+            <task id="429" name="API del server" color="#ff0033" meeting="true" start="2021-03-15" duration="0" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="88" name="MP - Millora del posicionament" color="#5ecf9a" meeting="false" start="2021-03-15" duration="10" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
             <task id="93" name="Adaptació servidor i app telecos" color="#5ecf9a" meeting="false" start="2021-03-15" duration="2" complete="0" thirdDate="2021-03-01" thirdDate-constraint="0" expand="true">
@@ -91,10 +108,15 @@
             <task id="96" name="Data profiling" color="#5ecf9a" meeting="false" start="2021-03-18" duration="1" complete="0" thirdDate="2021-03-08" thirdDate-constraint="0" expand="true">
                 <depend id="100" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="100" name="Data cleaning" color="#5ecf9a" meeting="false" start="2021-03-19" duration="1" complete="0" thirdDate="2021-03-08" thirdDate-constraint="0" expand="true"/>
+            <task id="100" name="Data cleaning" color="#5ecf9a" meeting="false" start="2021-03-19" duration="1" complete="0" thirdDate="2021-03-08" thirdDate-constraint="0" expand="true">
+                <depend id="432" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="432" name="Conjunt de dades processades" color="#ff0033" meeting="true" start="2021-03-22" duration="0" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
             <task id="111" name="Implementar algoritme posicionament" color="#5ecf9a" meeting="false" start="2021-03-22" duration="5" complete="0" thirdDate="2021-03-08" thirdDate-constraint="0" expand="true">
                 <depend id="376" type="2" difference="10" hardness="Strong"/>
+                <depend id="435" type="3" difference="0" hardness="Strong"/>
             </task>
+            <task id="435" name="Algoritme de posicionament" color="#ff0033" meeting="true" start="2021-03-29" duration="0" complete="0" thirdDate="2021-03-15" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="105" name="ADA - Adaptació i desenvolupament Android" color="#86caf6" meeting="false" start="2021-03-08" duration="51" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
             <task id="106" name="Desplegar entorn Android Studio i familiarizació" color="#86caf6" meeting="false" start="2021-03-08" duration="3" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true"/>
@@ -104,11 +126,18 @@
             </task>
             <task id="114" name="Desenvolupar versió alpha" color="#86caf6" meeting="false" start="2021-03-24" duration="13" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
                 <depend id="115" type="2" difference="0" hardness="Strong"/>
+                <depend id="438" type="3" difference="0" hardness="Strong"/>
             </task>
+            <task id="438" name="App Android (Alpha)" color="#ff0033" meeting="true" start="2021-04-12" duration="0" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
             <task id="115" name="Desenvolupar versió beta" color="#86caf6" meeting="false" start="2021-04-12" duration="5" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
                 <depend id="151" type="2" difference="0" hardness="Strong"/>
+                <depend id="441" type="3" difference="0" hardness="Strong"/>
             </task>
-            <task id="116" name="Desenvolupar release final" color="#86caf6" meeting="false" start="2021-05-10" duration="6" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
+            <task id="441" name="App Android (Beta)" color="#ff0033" meeting="true" start="2021-04-19" duration="0" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
+            <task id="116" name="Desenvolupar release final" color="#86caf6" meeting="false" start="2021-05-10" duration="6" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
+                <depend id="445" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="445" name="App Android" color="#ff0033" meeting="true" start="2021-05-18" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="123" name="IOS - Desenvolupament iOS" color="#86caf6" meeting="false" start="2021-03-08" duration="55" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
             <task id="124" name="Establir i preparar equip de treball" color="#86caf6" meeting="false" start="2021-03-08" duration="1" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
@@ -116,31 +145,45 @@
             <task id="306" name="Desenvolupament incremental" color="#86caf6" meeting="false" start="2021-03-29" duration="15" complete="0" thirdDate="2021-04-05" thirdDate-constraint="0" expand="true">
                 <depend id="152" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="404" name="Desenvolupar release final" color="#86caf6" meeting="false" start="2021-05-10" duration="10" complete="0" thirdDate="2021-04-05" thirdDate-constraint="0" expand="true"/>
+            <task id="404" name="Desenvolupar release final" color="#86caf6" meeting="false" start="2021-05-10" duration="10" complete="0" thirdDate="2021-04-05" thirdDate-constraint="0" expand="true">
+                <depend id="450" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="450" name="App iOS" color="#ff0033" meeting="true" start="2021-05-24" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="133" name="IHF - Investigació de les tendències en horaris i fluxos (ML)" color="#0080e9" meeting="false" start="2021-03-18" duration="27" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
             <task id="134" name="Anàlisi i creuament de dades de posicionament i d’horaris" color="#0080e9" meeting="false" start="2021-03-18" duration="12" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="136" type="2" difference="0" hardness="Strong"/>
                 <depend id="137" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="136" name="Avaluar insights i localitzar punts problemàtics" color="#0080e9" meeting="false" start="2021-04-05" duration="5" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
+            <task id="136" name="Avaluar insights i localitzar punts problemàtics" color="#0080e9" meeting="false" start="2021-04-05" duration="5" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
+                <depend id="456" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="456" name="Informe dels resultats de l'estudi de fluxos" color="#ff0033" meeting="true" start="2021-04-12" duration="0" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
             <task id="137" name="Implementació de sistemes de ML" color="#0080e9" meeting="false" start="2021-04-05" duration="14" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="138" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="138" name="Avaluació dels models" color="#0080e9" meeting="false" start="2021-04-23" duration="1" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
+            <task id="138" name="Avaluació dels models" color="#0080e9" meeting="false" start="2021-04-23" duration="1" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
+                <depend id="453" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="453" name="Models de predicció" color="#ff0033" meeting="true" start="2021-04-26" duration="0" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="139" name="VBI - Comunicació dels consells (Visualització i BI)" color="#0080e9" meeting="false" start="2021-04-26" duration="20" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
             <task id="140" name="Disseny de les visualitzacions dels informes" color="#0080e9" meeting="false" start="2021-04-26" duration="10" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
             <task id="142" name="Disseny de les visualitzacions per on-line mgmt" color="#0080e9" meeting="false" start="2021-04-26" duration="15" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="143" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="143" name="Implementació dels sistemes en format webapp" color="#0080e9" meeting="false" start="2021-05-17" duration="5" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
+            <task id="143" name="Implementació dels sistemes en format webapp" color="#0080e9" meeting="false" start="2021-05-17" duration="5" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
+                <depend id="460" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="460" name="Web App de control i infromes" color="#ff0033" meeting="true" start="2021-05-24" duration="0" complete="0" thirdDate="2021-04-26" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="144" name="TS - Testing" color="#fa9954" meeting="false" start="2021-04-12" duration="30" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
-            <task id="376" name="Anàlisi estabilitat servidor" color="#fa9954" meeting="false" start="2021-04-12" duration="25" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
+            <task id="376" name="Anàlisi estabilitat servidor" color="#fa9954" meeting="false" start="2021-04-12" duration="20" complete="0" thirdDate="2021-03-29" thirdDate-constraint="0" expand="true"/>
             <task id="145" name="Dissenyar pla de beta-testing" color="#fa9954" meeting="false" start="2021-04-19" duration="2" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="147" type="2" difference="0" hardness="Strong"/>
+                <depend id="464" type="3" difference="0" hardness="Strong"/>
             </task>
+            <task id="464" name="Pla de disseny del beta-test" color="#ff0033" meeting="true" start="2021-04-21" duration="0" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
             <task id="147" name="Desplegament del test" color="#fa9954" meeting="false" start="2021-04-21" duration="2" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="151" type="2" difference="0" hardness="Strong"/>
                 <depend id="152" type="2" difference="0" hardness="Strong"/>
@@ -155,8 +198,20 @@
             </task>
             <task id="149" name="Recollida de feedback i nivell de satisfacció" color="#fa9954" meeting="false" start="2021-04-23" duration="11" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
                 <depend id="150" type="2" difference="0" hardness="Strong"/>
+                <depend id="467" type="2" difference="0" hardness="Strong"/>
+                <depend id="470" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="150" name="Anàlisi de la situació i consideració de millores i canvis" color="#fa9954" meeting="false" start="2021-05-10" duration="10" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true"/>
+            <task id="467" name="Feedback test Android" color="#ff0033" meeting="true" start="2021-05-10" duration="0" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
+            <task id="470" name="Feedback test iOS" color="#ff0033" meeting="true" start="2021-05-10" duration="0" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
+            <task id="150" name="Anàlisi de la situació i millores en l'arquitectura" color="#fa9954" meeting="false" start="2021-05-10" duration="10" complete="0" thirdDate="2021-02-08" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Les millores oportunes pel que fa a servidor, posicionament dels beacons, etc...]]>
+                </notes>
+                <depend id="475" type="3" difference="0" hardness="Strong"/>
+                <depend id="483" type="3" difference="0" hardness="Strong"/>
+            </task>
+            <task id="483" name="Arquitectura definitiva" color="#ff0033" meeting="true" start="2021-05-24" duration="0" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
+            <task id="475" name="Informe de l'anàlisi de la situació" color="#ff0033" meeting="true" start="2021-05-24" duration="0" complete="0" thirdDate="2021-04-19" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
