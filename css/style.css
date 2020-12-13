@@ -57,6 +57,14 @@ p{
     color: #666666;
 }
 
+.white{
+  color: white;
+}
+
+.dark_blue{
+  color: #001110;
+}
+
 .back_grey{
     background-color: #c7c7c7;
 }
@@ -160,20 +168,18 @@ h3{
 }
 
 .placeholder{
-    height: 600px;
+    height: 550px;
     width: 100%;
     display: flex;
     align-items: center;
     border-radius: 15px;
     margin-bottom: 25px;
-
-    background: #123455; /* fallback */
-    background-image: linear-gradient(0.30turn, #001110, #123455);
-
-    background-position: right;
-    background-repeat: no-repeat;
-
 }
+
+.placeholder h2{
+  color: #123455;
+}
+
 
 .mission{
   font-size: 50px;
@@ -277,10 +283,20 @@ h3{
 
 }
 
+
+
 .section_group{
     width: 100%;
     display: flex;
     align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #123455; /* fallback */
+    background-image: linear-gradient(0.30turn, #001110, #123455);
+}
+
+.section_group h2{
+  font-size: 45px;
 }
 
 .section{
@@ -307,6 +323,45 @@ h3{
     width: 100%;
 }
 
+
+.placeholder_text h3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 23px;
+}
+
+
+.placeholder_solutions{
+  padding-top: 50px;
+  margin: 0 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder_solutions h4{
+  font-size: 40px;
+  padding-right: 30px;
+  width: 50%;
+  text-align: right;
+}
+
+
+.solutions_right{
+  padding-left: 30px;
+  width: 50%;
+}
+
+.placeholder_solutions h5{
+  font-size: 22px;
+}
+
+
+.first_child{
+  padding-bottom: 15px;
+}
+
+
 .left{
   margin-right: 20px;
 }
@@ -314,9 +369,8 @@ h3{
 .placeholder_text a{
     border: 2px solid #90caf9;
     border-radius: 3px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px;
-    color: white;
     text-decoration: none;
     font-size: 16px;
     text-align: center;
@@ -329,6 +383,29 @@ h3{
     box-shadow: 0px 0px 10px 3px #90caf9;
 }
 
+
+.placeholder_icons{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.icon_cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.icon_cont span{
+  font-size: 80px;
+}
+
+.icon_cont h6{
+  text-align: center;
+}
 
 .topnav {
   width: 90%;
@@ -415,7 +492,7 @@ h3{
   .placeholder{
     margin-bottom: 15px;
   }
-  .placeholder_text{
+  .normal{
     margin-left: 6%;
     margin-right: 6%;
   }
@@ -425,9 +502,63 @@ h3{
   .section{
     width: 100%;
   }
-  .main_content{
-    padding-left: 6%;
-    padding-right: 6%;
+  .main{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .mission{
+    font-size: 30px;
+  }
+  .placeholder_description{
+    flex-direction: column;
+  }
+  .placeholder_solutions{
+    flex-direction: column;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .placeholder_solutions h4{
+    padding-right: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+
+  .solutions_right{
+    padding-left: 0;
+    width: 100%;
+  }
+  .right_title{
+    padding-top: 70px;
+  }
+  .placeholder_icons{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .icon_cont{
+    flex-direction: row;
+
+  }
+  .icon_cont span{
+    font-size: 30px;
+  }
+
+  .icon_cont h6{
+    text-align: left;
+    font-size: 21px;
+    padding-left: 10px;
+  }
+
+  .right{
+    margin: 0;
+    padding-left: 0;
+    border: 0;
+    padding-top: 30px;
   }
   footer{
     flex-direction: column-reverse;
