@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 body{
     font-family: 'Mulish', sans-serif;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 main{
@@ -588,15 +588,31 @@ h3{
   .social{
     padding-bottom: 20px;
   }
+
+  #placeholder_text_1 video{
+    height: 100%;
+    width: auto !important;
+  }
+}
+
+#placeholder_text_1 {
+  overflow: hidden;
+  max-width: 100vw;
+  border-radius: 0px;;
 }
 
 #placeholder_text_1 video{
-  position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
 }
 
 #placeholder_text_1 .placeholder_text {
+  position: absolute;
+  box-sizing: border-box;
   padding: 40px;
   background-color: rgb(255,255,255, 0.5);
+  max-width: 90vw;
+  margin: 0px auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
