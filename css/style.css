@@ -594,6 +594,11 @@ h3{
     height: 100%;
     width: auto !important;
   }
+
+  .big_title{
+    text-align: center;
+    font-size: 35px;
+  }
 }
 
 #placeholder_text_1 {
